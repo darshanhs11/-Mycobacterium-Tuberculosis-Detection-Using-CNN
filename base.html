@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Application</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <style>
+        footer {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+            footer p {
+                font-family: calibri;
+            }
+
+                footer p:nth-child(1) {
+                    font-size: 30px;
+                    font-weight: bold;
+                    columns: #191919;
+                    line-height: 10px;
+                }
+
+        .social-icons {
+            display: flex;
+        }
+
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #c6e3e3;
+                margin: 20px 10px;
+                border-radius: 50%;
+            }
+
+            .social-icons i {
+                color: #000000;
+            }
+
+            .social-icons a:hover,
+            .social-b a:hover {
+                background-color: #000000;
+                box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+                transition: all ease 0.5s;
+            }
+
+                .social-icons a:hover i,
+                .social-b a:hover i {
+                    background-color: #FFFFFF;
+                    transition: all ease 0.5s;
+                }
+
+        .social-b {
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: fixed;
+        }
+
+            .social-b a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                padding: 0px;
+                margin: 0px;
+                line-height: 0px;
+                background-color: #FFFFFF;
+                border: 1px solid #cbcbcb;
+                box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+            }
+
+            .social-b i {
+                color: #2b2b2b;
+                font-size: 20px;
+            }
+
+        .copyright {
+            color: #565555;
+            font-size: 13px;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 4px auto 20px 40%;
+            color: #403e3e;
+            font-family: myriad pro;
+        }
+        /* Three columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            margin-bottom: 16px;
+            padding: 0 1px;
+        }
+
+        /* Display the columns below each other instead of side by side on small screens */
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        /* Add some shadows to create a card effect */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Some left and right padding inside the container */
+        .container {
+            padding: 0 16px;
+        }
+
+            /* Clear floats */
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CNN Based Approach to Detect Tuberculosis</a>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><a href="">Project Link</a></button>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+</body>
+
+<div style="margin-top:20px;" class="row">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h3 style="text-align: center;font-weight: bold;">Supreetha M</h3>
+                <p style="font-weight:bold" class="title" style="fon">Assistant Professor, Project Guide</p>
+                <p style="font-weight:bold">Department of Electronics & Communication Engineering.</p>
+                <p style="font-weight:bold">SJCE, Mysore.</p>
+                <p><button class="button"><a href="mailto:supreetha.manjanna@jssstuniv.in" style="color:white">Contact</a></button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h3 style="text-align: center;font-weight: bold;">Darshan H S</h3>
+                <p style="font-weight:bold" class="title">Engineering Student, 5th sem</p>
+                <p style="font-weight:bold">Department of Electronics and Communication Engineering.</p>
+                <p style="font-weight:bold">SJCE, Mysore.</p>
+                <p><button class="button"><a href="mailto:darshanhs953@gmail.com" style="color:white">Contact</a></button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h3 style="text-align: center;font-weight: bold;">Ganapati S M</h3>
+                <p style="font-weight:bold" class="title">Engineering Student, 5th sem</p>
+                <p style="font-weight:bold">Department Of Electronics and Communication Engineering.</p>
+                <p style="font-weight:bold">SJCE, Mysore.</p>
+                <p><button class="button"><a href="mailto:ganapatism4@gmail.com" style="color:white">Contact</a></button></p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="column">
+    <div class="card">
+
+        <div class="container">
+            <h3 style="text-align: center;font-weight: bold;">Pradyumna Bhat L P</h3>
+            <p style="font-weight:bold" class="title">Engineering Student, 5th sem</p>
+            <p style="font-weight:bold">Department Of Electronics and Communication Engineering.</p>
+            <p style="font-weight:bold">SJCE, Mysore.</p>
+            <p><button class="button"><a href="mailto:pradyumna321321@gmail.com" style="color:white">Contact</a></button></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+
+    <p>Darshan H S</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/darshan__h__s/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Darshan60367680"><i class="fab fa-twitter"></i></a>
+        <a href="https://m.facebook.com/100061487927588/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/mwlite/in/darshan-h-s-706b72200"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/darshanhs11"><i class="fab fa-github"></i></a>
+    </div>
+    <!--copyright-->
+    <p class="copyright">Copyright by Darshan H S</p>
+
+</footer>
+
+</html>
